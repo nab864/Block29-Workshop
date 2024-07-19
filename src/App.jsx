@@ -3,7 +3,7 @@ import Home from "./components/Home"
 import AllPuppies from "./components/AllPuppies"
 import SinglePuppy from "./components/SinglePuppy"
 import SideBar from "./components/SideNav"
-import AddPuppy from "./components/AddPuppyForm"
+import AddPuppyForm from "./components/AddPuppyForm"
 import "./App.css"
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/allpuppies" element={<AllPuppies />} />
           <Route path="/:puppyID" element={<PuppyWrapper />} />
-          <Route path="/addpuppy" element={<AddPuppy />} />
+          <Route path="/addpuppy" element={<AddPuppyForm />} />
         </Routes>
       </div>
       

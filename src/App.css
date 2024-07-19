@@ -45,6 +45,12 @@
   width: 15rem;
   margin: 1rem;
 }
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
 
 .top-of-card {
   display: flex;
@@ -57,6 +63,23 @@ h2 {
   margin-left: 0.5em;
 }
 
-.team {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addpuppyform {
+  width: 15vw;
+  border: 1px solid black;
+  padding: 1em;
+  text-align: right;
   
+}
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form>button {
+  margin-top: 0.5em;
 }

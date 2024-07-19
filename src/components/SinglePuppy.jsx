@@ -30,16 +30,17 @@ export default function SinglePuppy( { puppyID }) {
     return (
       <div className="singlepuppy">
         <div className="puppycard">
-          <div className="top-of-card">
-            <h1>{singlePuppy.name}</h1>
-            <h1>{singlePuppy.teamId}</h1>
+          <div className="description">
+            <h3>Name: {singlePuppy.name}</h3>
+            <h3>TeamID: {singlePuppy.teamId}</h3>
+            <h3>Breed: {singlePuppy.breed}</h3>
+            <h3>Status: {singlePuppy.status}</h3>
           </div>
-          <h2>{singlePuppy.id}</h2>
           <img src={singlePuppy.imageUrl} alt={singlePuppy.name} />
           <button onClick={() => handleReturnClick()}>Return</button>
           <button onClick={() => handleTeamClick()}>{showTeam ? 'Hide Team' : 'Show Team'}</button>
         </div>
-        {showTeam && <Team /> }
+        {/* {showTeam && <Team /> } */}
       </div>
     )
   }
