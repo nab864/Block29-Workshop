@@ -1,0 +1,62 @@
+.page {
+  display: flex;
+}
+
+.mainsection {
+  flex: 1;
+  text-align: center;
+  margin-left: 5em;
+}
+
+.sidebar {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 5em;
+  background-color: bisque;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.allpuppies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.singlepuppy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.puppycard>img {
+  object-fit: cover;
+  height: 20rem;
+}
+
+.puppycard {
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin: 1rem;
+}
+
+.top-of-card {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+h2 {
+  margin-left: 0.5em;
+}
+
+.team {
+  
+}
