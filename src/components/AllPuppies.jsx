@@ -57,18 +57,17 @@ export default function AllPuppies() {
       <>
         <h1>All Puppies</h1>
         <form onSubmit={(e) => handleChange(e)}>
-          <label>
-            Search: <input type="text" onChange={(e) => setSearch(e.target.value)} />
-          </label>
+          <input type="text" onChange={(e) => setSearch(e.target.value)} />
+          
           <button>Search</button>
         </form>
         <div className="allpuppies">
           {filterPuppies.map(puppy => {
             return (
-              <div className="puppycard">
+              <div className="puppycard" key={puppy.id}>
                 <div className="top-of-card">
                   <h1>{puppy.name}</h1>
-                  <h1>{puppy.teamId}</h1>
+                  {puppy.teamId ? <h1>{puppy.teamId}</h1> : <h1>null</h1>}
                 </div>
                 <h2>{puppy.id}</h2>
                 <img src={puppy.imageUrl} alt={puppy.name} />

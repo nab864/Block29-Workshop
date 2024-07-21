@@ -22,9 +22,9 @@ export default function SinglePuppy( { puppyID }) {
     navigate(`/allpuppies`)
   }
 
-  const handleTeamClick = () => {
-    setShowTeam(!showTeam)
-  }
+  // const handleTeamClick = () => {
+  //   setShowTeam(!showTeam)
+  // }
 
   if (singlePuppy) {
     return (
@@ -38,7 +38,7 @@ export default function SinglePuppy( { puppyID }) {
           </div>
           <img src={singlePuppy.imageUrl} alt={singlePuppy.name} />
           <button onClick={() => handleReturnClick()}>Return</button>
-          <button onClick={() => handleTeamClick()}>{showTeam ? 'Hide Team' : 'Show Team'}</button>
+          {/* <button onClick={() => handleTeamClick()}>{showTeam ? 'Hide Team' : 'Show Team'}</button> */}
         </div>
         {/* {showTeam && <Team /> } */}
       </div>
