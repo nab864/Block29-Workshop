@@ -19,6 +19,8 @@
 
 .sidebar {
   position: fixed;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -27,32 +29,41 @@
   border: 5px solid #301014;
 }
 
-a>img {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+a {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  background-color: #EDF4ED;
+  color: #301014;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility 0s;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: white 1px 0 10px;
 }
 
 .link-wrapper {
   position: relative;
+  display: inline-block;
 }
 
 .img-description {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 25%;
+  bottom: 25%;
   left: 0;
   right: 0;
-  background: rgba(237, 244, 237, 0.72);
-  color: #301014;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-  pointer-events: none;
 }
 
-.link-wrapper:hover .img-description {
+.link-wrapper:hover a {
   visibility: visible;
   opacity: 1;
+}
+.link-wrapper:hover .img-description {
+  visibility: hidden;
 }
 
 .allpuppies {
